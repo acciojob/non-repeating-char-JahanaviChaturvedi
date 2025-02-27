@@ -1,25 +1,22 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
 	let obj={};
-	let str = 'aabbccdd';
 	for(let i=0;i<str.length;i++){
-		if(obj[str[i]]==undefined){
-			obj[str[i]]=1;
+		if char = str[i];
+		if(obj[str[char]]===undefined){
+			obj[str[char]]=1;
 		}
 		else{
-			obj[str[i]]++;
+			obj[str[char]]++;
 		}
 	}
-	for(let x in obj){
-		if(obj[x]==1){
-			console.log(x);
+	for(let i=0; i<str.length; i++){
+		let char = str[i];
+		if(obj[char === 1]){
+			return char;
 		}
-		else{
-			console.log(null);
-		}
-	}
-	console.log(obj);
-	
+}
+	return null;
 }
 // const input = prompt("Enter a string");
 // alert(firstNonRepeatedChar(input)); 
